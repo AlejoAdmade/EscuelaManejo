@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Escuela de Manejo Arilis: cursos de conducción, requisitos y sucursales."
+    />
+    <meta name="theme-color" content="#050705" />
+    <title>Escuela de Manejo Arilis</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+    <header class="site-header">
+      <div class="nav-shell">
+        <a class="brand" href="#inicio" aria-label="Ir al inicio">
+          <span class="brand-logo image-slot image-slot--logo">
+            <img src="images/logo.png" alt="Logo de Escuela de Manejo Arilis" />
+            <span class="image-hint" aria-hidden="true">logo.png</span>
+          </span>
+          <span class="brand-copy">
+            <small>Escuela de manejo</small>
+            <strong>ARILIS</strong>
+          </span>
+        </a>
+
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-label="Abrir menú"
+          aria-controls="main-menu"
+          aria-expanded="false"
+        >
+          <span></span><span></span><span></span>
+        </button>
+
+        <nav class="main-nav" id="main-menu" aria-label="Navegación principal">
+          <a class="is-active" href="#inicio">Inicio</a>
+          <a href="#nosotros">Nosotros</a>
+          <a href="#cursos">Cursos</a>
+          <a href="#requisitos">Requisitos</a>
+          <a href="#sucursales">Sucursales</a>
+          <a href="#contacto">Contacto</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="contenido">
+      <section class="hero" id="inicio" aria-labelledby="hero-title">
+        <div class="hero-backdrop image-slot image-slot--hero">
+          <img src="images/hero.jpg" alt="Instructora junto a un vehículo de la escuela" />
+          <span class="image-hint" aria-hidden="true">hero.jpg</span>
+        </div>
+        <div class="hero-shade" aria-hidden="true"></div>
+
+        <div class="container hero-layout">
+          <div class="hero-copy reveal" id="nosotros">
+            <span class="eyebrow">Aprende hoy. Conduce seguro.</span>
+            <h1 id="hero-title">Tu licencia<br /><em>paso a paso</em></h1>
+            <p class="hero-lead">Aprende a manejar con seguridad</p>
+            <p class="hero-text">
+              Más de 25 años formando conductores responsables en Panamá.
+            </p>
+            <div class="hero-actions">
+              <a class="button button--primary" href="#cursos">
+                Ver cursos
+                <span aria-hidden="true">→</span>
+              </a>
+              <a class="button button--outline" href="#contacto" data-whatsapp-link>
+                <svg aria-hidden="true" viewBox="0 0 24 24">
+                  <path d="M20 11.6a8 8 0 0 1-11.9 7L4 20l1.4-4A8 8 0 1 1 20 11.6Z" />
+                  <path d="M9 8.7c.2 2 2 3.8 4 4.5.5.2 1-.8 1.4-1.2.3-.3.7-.1 1 .1" />
+                </svg>
+                Inscríbete por WhatsApp
+              </a>
+            </div>
+          </div>
+
+          <aside class="hero-badge reveal reveal--delay" aria-label="Experiencia de la escuela">
+            <strong data-counter="25">25</strong>
+            <span>años de<br />experiencia</span>
+          </aside>
+        </div>
+      </section>
+
+      <section class="quick-section section" id="requisitos" aria-labelledby="quick-title">
+        <h2 class="visually-hidden" id="quick-title">Información para obtener tu licencia</h2>
+        <div class="container quick-grid">
+          <a class="quick-card reveal tilt-card" href="#contacto">
+            <span class="icon-disc" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <rect x="3" y="5" width="18" height="14" rx="2" />
+                <circle cx="8" cy="11" r="2" />
+                <path d="M5.5 16c.6-2 4.4-2 5 0M14 9h4M14 13h4M14 17h3" />
+              </svg>
+            </span>
+            <h3>¿Qué licencia necesitas?</h3>
+            <p>Conoce los tipos de licencia y requisitos generales para cada categoría.</p>
+            <span class="card-arrow" aria-hidden="true">→</span>
+          </a>
+
+          <a class="quick-card reveal reveal--delay tilt-card" href="#contacto">
+            <span class="icon-disc" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path d="M9 5h6M9 3h6v4H9z" />
+                <rect x="5" y="5" width="14" height="16" rx="2" />
+                <path d="m8 11 1.5 1.5L12 10M14 11h2M8 16l1.5 1.5L12 15M14 16h2" />
+              </svg>
+            </span>
+            <h3>Conoce los requisitos</h3>
+            <p>Paso a paso para saber qué necesitas llevar el día que hagas tu trámite.</p>
+            <span class="card-arrow" aria-hidden="true">→</span>
+          </a>
+
+          <a class="quick-card reveal reveal--delay-2 tilt-card" href="#cursos">
+            <span class="icon-disc" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="8" />
+                <circle cx="12" cy="12" r="2" />
+                <path d="M12 10V5M10.5 13.3 7 17M13.5 13.3 17 17M4 12h6M14 12h6" />
+              </svg>
+            </span>
+            <h3>Practica para el examen</h3>
+            <p>Consejos y recomendaciones para que llegues preparado y manejes con confianza.</p>
+            <span class="card-arrow" aria-hidden="true">→</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="section courses" id="cursos" aria-labelledby="courses-title">
+        <div class="container">
+          <header class="section-heading reveal">
+            <span>Formación para cada etapa</span>
+            <h2 id="courses-title">Nuestros cursos</h2>
+            <p>Elige la opción que mejor se adapta a lo que quieres conducir.</p>
+          </header>
+
+          <div class="course-grid">
+            <article class="course-card reveal tilt-card">
+              <div class="card-media image-slot">
+                <img src="images/curso-basico.jpg" alt="Vehículo del curso básico de conducción" />
+                <span class="image-hint" aria-hidden="true">curso-basico.jpg</span>
+              </div>
+              <div class="course-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="m5 11 2-4h10l2 4M4 11h16v7h-2v-2H6v2H4z" /><circle cx="7.5" cy="13.5" r="1" /><circle cx="16.5" cy="13.5" r="1" /></svg>
+              </div>
+              <div class="course-body">
+                <h3>Curso Básico<br />de Conducción</h3>
+                <p>Ideal para quienes inician desde cero. Aprende lo esencial para manejar con seguridad.</p>
+                <a href="#contacto">Más información <span aria-hidden="true">→</span></a>
+              </div>
+            </article>
+
+            <article class="course-card reveal reveal--delay tilt-card">
+              <div class="card-media image-slot">
+                <img src="images/curso-estandar.jpg" alt="Vehículo del curso estándar" />
+                <span class="image-hint" aria-hidden="true">curso-estandar.jpg</span>
+              </div>
+              <div class="course-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M6 4v8M10 4v5M14 4v5M18 4v8M6 8h4M14 8h4M6 12l3 6M18 12l-3 6M9 18h6" /></svg>
+              </div>
+              <div class="course-body">
+                <h3>Curso<br />Estándar</h3>
+                <p>Formación completa en manejo y práctica en ciudad y carretera.</p>
+                <a href="#contacto">Más información <span aria-hidden="true">→</span></a>
+              </div>
+            </article>
+
+            <article class="course-card reveal reveal--delay-2 tilt-card">
+              <div class="card-media image-slot">
+                <img src="images/curso-motocicleta.jpg" alt="Motocicleta usada durante el curso" />
+                <span class="image-hint" aria-hidden="true">curso-motocicleta.jpg</span>
+              </div>
+              <div class="course-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><circle cx="6" cy="17" r="3" /><circle cx="18" cy="17" r="3" /><path d="m8 17 3-6h4l3 6M10 17h5M13 11l-2-3h-2M15 8h3" /></svg>
+              </div>
+              <div class="course-body">
+                <h3>Curso para<br />Motocicleta</h3>
+                <p>Entrenamiento práctico y teórico para manejar con responsabilidad y seguridad.</p>
+                <a href="#contacto">Más información <span aria-hidden="true">→</span></a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section branches" id="sucursales" aria-labelledby="branches-title">
+        <div class="container">
+          <header class="section-heading reveal">
+            <span>Estamos cerca de ti</span>
+            <h2 id="branches-title">Nuestras sucursales</h2>
+            <p>Selecciona la ubicación que te resulte más conveniente.</p>
+          </header>
+
+          <div class="branch-grid">
+            <a class="branch-card reveal" href="#contacto">
+              <div class="branch-media image-slot">
+                <img src="images/sucursal-panama.jpg" alt="Sucursal de Panamá" />
+                <span class="image-hint" aria-hidden="true">sucursal-panama.jpg</span>
+              </div>
+              <div class="branch-label">
+                <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z" /><circle cx="12" cy="10" r="2.5" /></svg>
+                <span>Panamá</span>
+                <b aria-hidden="true">→</b>
+              </div>
+            </a>
+
+            <a class="branch-card reveal reveal--delay" href="#contacto">
+              <div class="branch-media image-slot">
+                <img src="images/sucursal-arraijan.jpg" alt="Sucursal de Arraiján" />
+                <span class="image-hint" aria-hidden="true">sucursal-arraijan.jpg</span>
+              </div>
+              <div class="branch-label">
+                <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z" /><circle cx="12" cy="10" r="2.5" /></svg>
+                <span>Arraiján</span>
+                <b aria-hidden="true">→</b>
+              </div>
+            </a>
+
+            <a class="branch-card reveal reveal--delay-2" href="#contacto">
+              <div class="branch-media image-slot">
+                <img src="images/sucursal-david.jpg" alt="Sucursal de David, Chiriquí" />
+                <span class="image-hint" aria-hidden="true">sucursal-david.jpg</span>
+              </div>
+              <div class="branch-label">
+                <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z" /><circle cx="12" cy="10" r="2.5" /></svg>
+                <span>David, Chiriquí</span>
+                <b aria-hidden="true">→</b>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-section" id="contacto" aria-labelledby="contact-title">
+        <div class="container contact-layout">
+          <div class="contact-copy reveal">
+            <span class="eyebrow">Da el primer paso</span>
+            <h2 id="contact-title">¿Listo para aprender a manejar?</h2>
+            <p>Escríbenos y te ayudaremos a elegir el curso indicado para ti.</p>
+          </div>
+          <a class="button button--light reveal reveal--delay" href="#" data-whatsapp-link>
+            Escríbenos por WhatsApp <span aria-hidden="true">→</span>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <strong>ARILIS</strong>
+          <p>Formando conductores responsables en Panamá.</p>
+        </div>
+        <div>
+          <h2>Horario</h2>
+          <p>Lunes a sábado<br />7:00 a.m. – 6:00 p.m.</p>
+        </div>
+        <div>
+          <h2>Sucursales</h2>
+          <p>Panamá · Arraiján<br />David, Chiriquí</p>
+        </div>
+        <a class="footer-whatsapp" href="#" data-whatsapp-link>
+          <span aria-hidden="true">◉</span>
+          Contáctanos
+        </a>
+      </div>
+      <div class="container footer-bottom">
+        <span>© <span data-current-year></span> Escuela de Manejo Arilis</span>
+        <a href="#inicio">Volver arriba ↑</a>
+      </div>
+    </footer>
+
+    <div class="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+  </body>
+</html>
