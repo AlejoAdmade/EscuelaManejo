@@ -1,7 +1,7 @@
 "use strict";
 
 // Escribe aquí el número completo, solo con dígitos. Ejemplo Panamá: 50760000000
-const WHATSAPP_NUMBER = "";
+const WHATSAPP_NUMBER = "68420007";
 const WHATSAPP_MESSAGE = "Hola, quiero información sobre los cursos de manejo.";
 
 const header = document.querySelector(".site-header");
